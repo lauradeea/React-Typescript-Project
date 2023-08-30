@@ -1,0 +1,74 @@
+.finder {
+  margin: 5rem auto;
+  max-width: 17rem;
+  text-align: center;
+
+  input {
+    height: 55px;
+    border-radius: 10px;
+    width: 16.5rem;
+    padding: 1rem;
+    font-size: 17px;
+    border: 1px solid #fff;
+    background-color: #d9e1e9;
+    box-shadow: 1px 1px 10px 1px #aeaeae;
+
+    &:focus {
+      border: 1px solid #fff;
+    }
+
+    &:active {
+      border: 1px solid #fff;
+    }
+
+    &:focus-visible {
+      outline: 0;
+    }
+  }
+}
+
+.inputField {
+  position: relative;
+
+  .arrow {
+    width: 0;
+    height: 0;
+    border-style: solid;
+    position: absolute;
+    top: 50%;
+    right: 40px;
+    transform: translateY(-50%);
+    width: 0;
+    height: 0;
+
+    &.arrowUp {
+      border-width: 0 8px 8px 8px;
+      border-color: transparent transparent #000 transparent;
+    }
+
+    &.arrowDown {
+      border-width: 8px 8px 0 8px;
+      border-color: #000 transparent transparent transparent;
+    }
+  }
+}
+
+.floatinggroup {
+  position: relative;
+
+  .floatinglabel {
+    position: absolute;
+    left: 40px;
+    top: 15px;
+    transition: all 0.1s ease;
+    pointer-events: none;
+    font-size: 15px;
+
+    ~ input:focus,
+    ~ input:not(:focus):valid {
+      top: 0px;
+      color: #676767;
+      font-size: 11px;
+    }
+  }
+}

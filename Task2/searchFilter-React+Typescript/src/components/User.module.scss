@@ -1,0 +1,19 @@
+.user {
+  padding: 0.5rem 1rem;
+  cursor: pointer;
+  &:hover {
+    background-color: #132f3c;
+    color: white;
+  }
+  &.selected {
+    background-color: #132f3c;
+    color: white;
+  }
+  .noData {
+    display: flex;
+    flex-direction: column;
+    align-items: centerspan {
+      padding-top: 10px;
+    }
+  }
+}
