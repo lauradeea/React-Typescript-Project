@@ -1,7 +1,12 @@
+
 .box {
+  min-width: 360px;
+  max-width: 600px;
+  font-family: "Arial", sans-serif;
   background: rgb(76, 183, 235);
   background: linear-gradient(0deg, rgba(76, 183, 235, 1) 0%, rgba(66, 126, 236, 1) 49%);
   padding: 4rem 6rem;
+  margin: 0 auto;
 
   &__wrapper {
     border-radius: 10px;
@@ -24,7 +29,7 @@
       span {
         font-size: 3.5rem;
         padding-right: 0.5rem;
-        line-height: 0.8;
+        line-height: 1;
       }
       &::before , &::after{
         content: "";
@@ -53,7 +58,7 @@
         background: #fff;
 
         span {
-          font-size: 5rem;
+          font-size: 7rem;
         }
 
         &::before {
@@ -62,7 +67,7 @@
 
         &::after {
           background: #28a0b7;
-          width: 92%;
+          width: 80%;
         }
       }
     }
